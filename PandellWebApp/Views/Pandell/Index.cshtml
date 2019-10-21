@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewBag.Title = "GenerateNumbers";
+}
+
+<h2>Generate Numbers</h2>
+
+<h4>click this button to generate a random, non-repeating list of numbers from 1 to 10,000</h4>
+
+@Html.ActionLink("Generate List", "GenerateNumbers", "Pandell", new {startNum=1, endNum=10000 }, new { @class = "btn btn-primary" }) 
+</br>
+
+<h3>Generated list:</h3>
+
+<p>@ViewBag.generatedList</p>
+
